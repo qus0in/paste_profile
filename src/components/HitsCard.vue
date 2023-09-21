@@ -2,7 +2,7 @@
   <Card title="📈 방문자수 카운터">
     <div class="input-group">
       <InputLabel for="hits" label="username" />
-      <TextInput id="hits-username" v-model="username" />
+      <TextInput id="hits-username" v-model="username" placeholder="본인의 GitHub 닉네임을 입력해주세요" />
       <InputLabel for="hits" label="border" />
       <Dropdown id="hits-border" v-model="border" :items="borderItems" />
       <InputLabel for="hits" label="title" />
