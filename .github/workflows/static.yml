@@ -36,11 +36,12 @@ jobs:
         with:
           node-version: 18
           # cache: 'npm'
-
-      - run: npm ci --legacy-peer-deps
-      - run: npm run build
+      - name: Install dependencies
+        run: yarn install
+      - name: Build page
+        run: yarn build
         env:
-          CI: false
+          NODE_ENV: production
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
