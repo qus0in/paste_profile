@@ -13,8 +13,8 @@ export default defineConfig(({ command }) => {
           "@": fileURLToPath(new URL("./src", import.meta.url)),
         },
       },
-      root: "./",
-      base: "/paste_profile/"
+      base: "/paste_profile/",
+      publicDir: "/paste_profile/"
     };
   } else {
     return {
