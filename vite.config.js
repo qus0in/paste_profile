@@ -14,7 +14,6 @@ export default defineConfig(({ command }) => {
         },
       },
       base: "/paste_profile/",
-      publicDir: "/paste_profile/"
     };
   } else {
     return {
