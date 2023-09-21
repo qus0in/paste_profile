@@ -1,17 +1,28 @@
-import { fileURLToPath, URL } from 'node:url'
+import { fileURLToPath, URL } from "node:url";
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: "/paste_profile/",
-  plugins: [
-    vue(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
+export default defineConfig(({ command }) => {
+  if (command == "build") {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: {
+          "@": fileURLToPath(new URL("./src", import.meta.url)),
+        },
+      },
+      root: "/paste_profile/"
+    };
+  } else {
+    return {
+      plugins: [vue()],
+      resolve: {
+        alias: {
+          "@": fileURLToPath(new URL("./src", import.meta.url)),
+        },
+      },
+    };
   }
-})
+});
