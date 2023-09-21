@@ -1,9 +1,9 @@
 <template>
-    <input :id=id type="text" :value="modelValue" @change="updateValue" class="form-control">
+    <input :id=id type="text" :value="modelValue" @change="updateValue" class="form-control" :placeholder=placeholder>
 </template>
 
 <script setup>
-    const { id, modelValue } = defineProps(['id', 'modelValue'])
+    const { id, modelValue, placeholder } = defineProps(['id', 'modelValue', 'placeholder'])
     const emit = defineEmits()
 
     const updateValue = (event) => {

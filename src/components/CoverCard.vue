@@ -1,5 +1,5 @@
 <template>
-  <Card title="🌊 커버 (Capsule-render)">
+  <Card title="🌊 커버">
     <div class="input-group">
       <InputLabel for="cover" label="type" />
       <Dropdown id="cover-type" v-model="coverType" :items="typeItems" />
@@ -38,7 +38,7 @@
       </button>
       <button class="btn btn-primary" @click="coverUpdate">생성</button>
     </div>
-    <Markdown v-if="modelValue" :key="componentKey" :modelValue="modelValue" />
+    <Markdown v-if="modelValue" :key="'cover' + componentKey" :modelValue="modelValue" />
   </Card>
 </template>
 

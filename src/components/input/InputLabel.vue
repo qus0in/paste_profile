@@ -1,7 +1,5 @@
 <template>
-    <div class="input-group-prepend">
-        <label :for=_for class="input-group-text">{{ label }}</label>
-    </div>
+    <label :for=_for class="input-group-text">{{ label }}</label>
 </template>
 
 <script setup>

@@ -4,7 +4,7 @@
       language="en-US"
       previewTheme="github"
       codeThem="github"
-      noUploadImg="true"
+      noUploadImg=true
       v-model="modelValue"
     />
 </template>
