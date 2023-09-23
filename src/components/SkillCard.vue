@@ -80,6 +80,7 @@ const skillsRemove2 = (name) => {
   group2.value.delete(name)
 }
 const skiilsUpdate = () => {
+  modelValue.value = ''
   modelValue.value += '### 🦾 Skills\n';
   modelValue.value += '**🧑‍💻 Lang and Frameworks**\n';
   for (const g1 of group1.value) {
