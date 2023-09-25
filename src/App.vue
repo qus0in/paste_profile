@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p class="display-3 pt-4 pb-2">🎈 GitHub Profile 마크다운 생성기</p>
+    <p class="display-3 pt-4 pb-2">🎈 GitHub Profile 생성기</p>
     <CoverCard />
     <HitsCard />
     <GreetingsCard />
