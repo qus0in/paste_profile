@@ -67,7 +67,7 @@ const addGroup2 = () => {
   skillsName.value = ''
 }
 const nameToInfo = (name) => {
-  const n1 = name.replace('.', 'dot').replace(' ', '')
+  const n1 = name.replace('.', 'dot').replace(' ', '').replace('-', '')
   const n2 = n1.charAt(0).toUpperCase() + n1.slice(1).toLowerCase()
   const icon = icons['si' + n2]
   console.log(icon)
