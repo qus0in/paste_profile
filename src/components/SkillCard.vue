@@ -70,7 +70,7 @@ const nameToInfo = (name) => {
   const n1 = name.replace('.', 'dot').replace(' ', '').replace('-', '')
   const n2 = n1.charAt(0).toUpperCase() + n1.slice(1).toLowerCase()
   const icon = icons['si' + n2]
-  console.log(icon)
+  // console.log(icon)
   return `https://img.shields.io/badge/${icon.slug}-${icon.hex}.svg?&style=for-the-badge&logo=${icon.slug}&logoColor=white`
 }
 const skillsRemove1 = (name) => {
