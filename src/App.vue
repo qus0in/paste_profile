@@ -3,7 +3,7 @@
     <p class="display-3 pt-4 pb-2">🎈 GitHub Profile 생성기</p>
     <CoverCard />
     <HitsCard />
-    <GreetingsCard />
+    <!-- <GreetingsCard /> -->
     <SkillCard />
     <TopLangsCard />
     <AlgorithmCard />
